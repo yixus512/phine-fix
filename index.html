@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Used Music Gear</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f0f0;
+        }
+        header {
+            background-color: #333;
+            color: white;
+            padding: 10px;
+            text-align: center;
+        }
+        .header-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .search-bar {
+            width: 50%;
+            padding: 5px;
+        }
+        .search-label {
+            display: none; /* Hidden label for accessibility */
+        }
+        .sign-up, .login {
+            margin-left: 10px;
+            padding: 5px 10px;
+            background-color: #007BFF; /* Updated color for better contrast */
+            color: white;
+            text-decoration: none;
+        }
+        .sign-up:hover, .login:hover {
+            background-color: #0056b3; /* Updated color for better contrast */
+        }
+        .products {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            padding: 20px;
+        }
+        .product {
+            background-color: #fff;
+            border: 1px solid #ddd;
+            margin: 10px;
+            padding: 10px;
+            width: 30%;
+            box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+            transition: 0.3s;
+        }
+        .product:hover {
+            box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+        }
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <label for="search" class="search-label">Search for gear...</label>
+            <input type="text" id="search" class="search-bar" placeholder="Search for gear...">
+            <a href="#" class="sign-up">Sign Up</a>
+            <a href="#" class="login">Login</a>
+        </div>
+    </header>
+    <main>
+        <div class="products">
+            <div class="product">
+                <h2>Guitar</h2>
+                <p>A beautifully restored vintage guitar, perfect for beginners and collectors alike.</p>
+            </div>
+            <div class="product">
+                <h2>Drum Kit</h2>
+                <p>A complete drum kit with all the essentials for a full band experience.</p>
+            </div>
+            <div class="product">
+                <h2>Piano</h2>
+                <p>A classic upright piano, great for both beginners and advanced players.</p>
+            </div>
+        </div>
+    </main>
+    <footer>
+        &copy; 2024 Used Music Gear. All rights reserved.
+    </footer>
+</body>
+</html>
